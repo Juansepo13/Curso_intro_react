@@ -34,8 +34,10 @@
                 );
             }
             }
-        const root = document.get('root')
-        root.innerHTML = "Oli React"
+        const root = document.getElementById('root')
+        const root = ReactDOM.createRoot(domContainer);
+        root.render(e(LikeButton));
+        // ReactDOM.render(e(LikeButton), domContainer) //
     </script>
  </body>
  </html>
